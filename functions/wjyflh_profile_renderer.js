@@ -1,11 +1,8 @@
-require('es6-promise').polyfill();
-require('isomorphic-fetch');
+// require('es6-promise').polyfill();
+// require('isomorphic-fetch');
 
-import gh from 'octonode'
-import axios from "axios";
-import qs from 'qs'
-import Unsplash from "unsplash-js"
-
+const gh = require("octonode")
+const Unsplash = require("unsplash-js")
 
 // Github markdown chnaging section START & END
 const changeStarter = `<!-- changer START -->`
