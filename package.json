@@ -4,7 +4,7 @@
   "description": "Github profile editor with github API.",
   "main": "index.js",
   "scripts": {
-    "dev": "env-cmd -f ./.env.development node -r esm ./functions/wjyflh_profile_renderer.js",
+    "dev": "node -r esm ./functions/wjyflh_profile_renderer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "wjy",
