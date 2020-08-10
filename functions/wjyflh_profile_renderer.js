@@ -25,7 +25,7 @@ const unsplash = new Unsplash({accessKey: process.env.UNSPLASH_ACCESS_TOKEN})
 
 
 // Main function here
-const run = async () => {
+const shakeItOut = async () => {
     
     const gh_repo = gh_client.repo(`wjyflh/wjyflh`);
     let unsplash_search_photos = ``;
@@ -53,5 +53,23 @@ const run = async () => {
 }
 
 
-run()
+// bind Netlify with their Functions handler
+exports.handler = async function () {
+    try {
+        await shakeItOut()
+    } catch (error) {
+        
+        // funcotion run err 
+        console.error(error)
 
+        return {
+            statusCode: 500,
+            body: 'Internal Server Error',
+        }
+    }
+
+    return {
+        statusCode: 200,
+        body: 'OK! new README.md rendered ^_>^)b',
+    }
+}
