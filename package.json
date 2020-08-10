@@ -1,0 +1,22 @@
+{
+  "name": "wjyflh-profile",
+  "version": "1.0.0",
+  "description": "Github profile editor with github API.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "env-cmd -f ./.env.development node -r esm ./functions/wjyflh_profile_renderer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wjy",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "env-cmd": "^10.1.0",
+    "es6-promise": "^4.2.8",
+    "esm": "^3.2.25",
+    "isomorphic-fetch": "^2.2.1",
+    "octonode": "^0.9.5",
+    "qs": "^6.9.4",
+    "unsplash-js": "^6.0.0"
+  }
+}
