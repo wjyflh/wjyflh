@@ -2,7 +2,7 @@
 // require('isomorphic-fetch');
 
 const gh = require("octonode")
-const Unsplash = require("unsplash-js")
+const Unsplash = require('unsplash-js').default
 
 // Github markdown chnaging section START & END
 const changeStarter = `<!-- changer START -->`
