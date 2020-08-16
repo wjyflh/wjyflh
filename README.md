@@ -1,6 +1,6 @@
 Recently activties:
 * 📍 Go outdoors ⛱️.
-* 📍 Build my own website from scratch, it would be released someday 🏭.
+* 📍 Build my own [website](https://www.wjy.rocks) from scratch 🏭.
   * Write some articles about CSS techniques and thoughts.
 * 📍 Learning CI practical settings and running in GCP or Circleci.
 * 📍 Build website with [Gatsby.js](https://www.gatsbyjs.com/) 
