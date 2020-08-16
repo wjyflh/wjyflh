@@ -51,6 +51,12 @@ const shakeItOut = async () => {
 
 
 // bind Netlify with their Functions handler
+const headers = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Allow-Methods': 'GET'
+};
+
 exports.handler = async function () {
     try {
         await shakeItOut()
@@ -61,12 +67,14 @@ exports.handler = async function () {
 
         return {
             statusCode: 500,
+            headers,
             body: 'Internal Server Error',
         }
     }
 
     return {
         statusCode: 200,
+        headers,
         body: 'OK! new README.md rendered ^_>^)b',
     }
 }
