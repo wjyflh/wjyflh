@@ -9,6 +9,7 @@ Recently activties:
 * 📍 Give [Netlify serverless functions](https://docs.netlify.com/functions/build-with-javascript/) a try with Node.js,
   and build a Github README.md generator, which will update profile image once someone visited my blog.
 
+---
 
 (Auto-switched Photos are scourced from [Unsplash](https://unsplash.com/) ^^)
 <!-- changer START -->
