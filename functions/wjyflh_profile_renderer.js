@@ -75,6 +75,6 @@ exports.handler = async function () {
     return {
         statusCode: 200,
         headers,
-        body: 'OK! new README.md rendered ^_>^)b',
+        body: 'OK! new README.md rendered (^_>^)b',
     }
 }
